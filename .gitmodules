@@ -18,7 +18,3 @@
     path = BCM2/lib/stb
     url = https://github.com/nothings/stb.git
     branch = master
-[submodule "BCM2/lib/bullet"]
-    path = BCM2/lib/bullet
-    url = https://github.com/bulletphysics/bullet3.git
-    branch = master

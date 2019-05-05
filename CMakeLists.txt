@@ -11,14 +11,6 @@ option(ASSIMP_BUILD_SAMPLES OFF)
 option(ASSIMP_BUILD_TESTS OFF)
 add_subdirectory(BCM2/lib/assimp)
 
-option(BUILD_BULLET2_DEMOS OFF)
-option(BUILD_BULLET3_DEMOS OFF)
-option(BUILD_CPU_DEMOS OFF)
-option(BUILD_EXTRAS OFF)
-option(BUILD_OPENGL3_DEMOS OFF)
-option(BUILD_UNIT_TESTS OFF)
-add_subdirectory(BCM2/lib/bullet)
-
 if(MSVC)
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /W4")
 else()
@@ -30,10 +22,9 @@ endif()
 
 include_directories(BCM2/include/
         BCM2/lib/assimp/include/
-        BCM2/lib/bullet/src/
         BCM2/lib/glad/include/
         BCM2/lib/glfw/include/
-        BCM2/lib/glm/
+        BCM2/lib/glm/glm
         BCM2/lib/stb/)
 
 file(GLOB VENDORS_SOURCES BCM2/lib/glad/src/glad.c)

@@ -14,6 +14,6 @@
 int main(int argc, char * argv[])
 {
    BlockCraftMine2::Game main_game(default_width, default_height);
-   std::thread main_game_thread(main_game());
+   main_game();
    return EXIT_SUCCESS;
 }
