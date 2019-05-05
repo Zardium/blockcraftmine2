@@ -4,7 +4,6 @@
 #include "pch.hpp"
 #include "BCM2.hpp"
 
-#include <glad/glad.h>
 #include <GLFW/glfw3.h>
 
 namespace BlockCraftMine2
@@ -48,6 +47,8 @@ Game Game::operator()()
       // Background Fill Color
       glClearColor(0.5f, 0.8f, 1.0f, 1.0f);
       glClear(GL_COLOR_BUFFER_BIT);
+
+
 
       // Flip Buffers and Draw
       glfwSwapBuffers(window_);

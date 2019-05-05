@@ -6,24 +6,26 @@
       <config projectName="BCM2" targetName="glfw" />
       <config projectName="BCM2" targetName="UpdateAssimpLibsDebugSymbolsAndDLLs" />
       <config projectName="BCM2" targetName="IrrXML" />
-      <config projectName="BCM2" targetName="uninstall" />
       <config projectName="BCM2" targetName="assimp" />
-      <config projectName="BCM2" targetName="zlibstatic" />
+      <config projectName="BCM2" targetName="uninstall" />
       <config projectName="BCM2" targetName="zlib" />
+      <config projectName="BCM2" targetName="zlibstatic" />
     </generated>
   </component>
-  <component name="CMakeSettings">
+  <component name="CMakeSettings" AUTO_RELOAD="true">
     <configurations>
       <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
     </configurations>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65de0d5d-dd4e-43f0-8115-521d0c0bbb26" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitmodules" beforeDir="false" afterPath="$PROJECT_DIR$/.gitmodules" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BCM2/include/phys/AABB.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BCM2/include/render/Mesh.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BCM2/src/render/Mesh.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BCM2/lib/bullet" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BCM2/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/BCM2/src/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCM2/include/pch.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/BCM2/include/pch.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCM2/src/BCM2.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/BCM2/src/BCM2.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -39,14 +41,56 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BCM2/src/BCM2.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="48" column="43" selection-start-line="48" selection-start-column="43" selection-end-line="48" selection-end-column="43" />
+            <state relative-caret-position="132">
+              <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
               <folding>
                 <element signature="e#38#56#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BCM2/include/pch.hpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="21" column="35" lean-forward="true" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+              <folding>
+                <element signature="e#93#123#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BCM2/include/render/Mesh.hpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="282">
+              <caret line="30" column="3" lean-forward="true" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="66" />
+              <folding>
+                <element signature="e#84#102#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/BCM2/src/render/Mesh.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="468">
+              <caret line="91" column="28" lean-forward="true" selection-start-line="91" selection-start-column="28" selection-end-line="91" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BCM2/include/phys/AABB.hpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -71,6 +115,11 @@
         <option value="$PROJECT_DIR$/BCM2/src/main.cpp" />
         <option value="$PROJECT_DIR$/.gitmodules" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/BCM2/include/AABB.hpp" />
+        <option value="$PROJECT_DIR$/BCM2/src/BCM2.cpp" />
+        <option value="$PROJECT_DIR$/BCM2/include/pch.hpp" />
+        <option value="$PROJECT_DIR$/BCM2/include/render/Mesh.hpp" />
+        <option value="$PROJECT_DIR$/BCM2/src/render/Mesh.cpp" />
       </list>
     </option>
   </component>
@@ -86,7 +135,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -103,6 +151,12 @@
               <item name="BCM2" type="b2602c69:ProjectViewProjectNode" />
               <item name="blockcraftmine2" type="462c0819:PsiDirectoryNode" />
               <item name="BCM2" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BCM2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blockcraftmine2" type="462c0819:PsiDirectoryNode" />
+              <item name="BCM2" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -113,19 +167,33 @@
             </path>
             <path>
               <item name="BCM2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blockcraftmine2" type="462c0819:PsiDirectoryNode" />
+              <item name="BCM2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="render" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BCM2" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="CPPToolchains" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C/C++" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\Users\Zach\Documents\GitHub\blockcraftmine2\BCM2\include\phys" />
+      <recent name="G:\Users\Zach\Documents\GitHub\blockcraftmine2\BCM2\include\rendering" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -205,16 +273,40 @@
       <workItem from="1556854909763" duration="2015000" />
       <workItem from="1556910902217" duration="3511000" />
       <workItem from="1557019929894" duration="1232000" />
+      <workItem from="1557032741120" duration="10807000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7272000" />
+    <option name="totallyTimeSpent" value="18079000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="145" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.311054" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1818766" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32974428" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50064266" side_tool="true" weight="0.32839838" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32936078" />
+      <window_info anchor="bottom" id="CMake" order="11" sideWeight="0.4993573" weight="0.32839838" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32936078" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31491002" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -234,29 +326,20 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/BCM2/lib/bullet" />
+    </ignored-roots>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/BCM2/lib/glad/include/glad/glad.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-648" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BCM2/src/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-232">
-          <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitmodules">
@@ -266,13 +349,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BCM2/include/phys/AABB.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/BCM2/src/BCM2.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="48" column="43" selection-start-line="48" selection-start-column="43" selection-end-line="48" selection-end-column="43" />
+        <state relative-caret-position="132">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
           <folding>
             <element signature="e#38#56#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BCM2/src/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BCM2/include/pch.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="35" lean-forward="true" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+          <folding>
+            <element signature="e#93#123#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BCM2/include/render/Mesh.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="30" column="3" lean-forward="true" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="66" />
+          <folding>
+            <element signature="e#84#102#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BCM2/src/render/Mesh.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="91" column="28" lean-forward="true" selection-start-line="91" selection-start-column="28" selection-end-line="91" selection-end-column="28" />
         </state>
       </provider>
     </entry>

@@ -3,7 +3,6 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/BCM2/lib/assimp" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/BCM2/lib/bullet" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/BCM2/lib/glad" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/BCM2/lib/glfw" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/BCM2/lib/glm" vcs="Git" />

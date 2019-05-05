@@ -7,7 +7,6 @@
 #include <assimp/Importer.hpp>
 #include <assimp/postprocess.h>
 #include <assimp/scene.h>
-#include <btBulletDynamicsCommon.h>
 #include <glad/glad.h>
 #include <glm/glm.hpp>
 #include <glm/gtc/type_ptr.hpp>
@@ -19,7 +18,7 @@
 #include <stb_image.h>
 
 // Define Some Constants
-const int default_width = 1024;
-const int default_height = 768;
+constexpr int default_width = 1024;
+constexpr int default_height = 768;
 
 #endif //~ BCM2 Header
