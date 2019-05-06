@@ -4,10 +4,14 @@
 
 #include "render/Mesh.hpp"
 
+using BlockCraftMine2::Mesh;
+
 Mesh::Mesh(const std::vector<GLfloat>& vertices,
            const std::vector<GLfloat>& uv,
            const std::vector<GLuint>& indices)
-:  m_index_count(indices.size())
+:  m_index_count(indices.size()),
+   m_VAO(0),
+   m_VBO_count(2)
 {
    glGenVertexArrays(1, &m_VAO);
    bind();
@@ -19,7 +23,9 @@ Mesh::Mesh(const std::vector<GLfloat>& vertices,
 
 Mesh::Mesh(const std::vector<GLfloat>& vertices,
            const std::vector<GLuint>& indices)
-:  m_index_count(indices.size())
+:  m_index_count(indices.size()),
+   m_VAO(0),
+   m_VBO_count(1)
 {
    glGenVertexArrays(1, &m_VAO);
    bind();
@@ -28,7 +34,7 @@ Mesh::Mesh(const std::vector<GLfloat>& vertices,
    add_EBO(indices);
 }
 
-Mesh::Mesh(Mesh&& other)
+Mesh::Mesh(Mesh&& other) noexcept
 :  m_VAO(other.m_VAO),
    m_VBO_count(other.m_VBO_count),
    m_index_count(other.m_index_count),
@@ -39,7 +45,7 @@ Mesh::Mesh(Mesh&& other)
    other.m_buffers.clear();
 }
 
-Mesh& Mesh::operator=(Mesh&& other)
+Mesh& Mesh::operator=(Mesh&& other) noexcept
 {
    m_VAO = other.m_VAO;
    m_VBO_count = other.m_VBO_count;
@@ -89,7 +95,7 @@ void Mesh::add_VBO(int dimensions, const std::vector<GLfloat>& data)
    m_buffers.push_back(VBO);
 }
 
-Gluint Mesh::get_VAO() const
+GLuint Mesh::get_VAO() const
 {
    return m_VAO;
 }

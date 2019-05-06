@@ -9,35 +9,46 @@
 #include <vector>
 #include "phys/AABB.hpp"
 
+namespace BlockCraftMine2
+{
+
 class Mesh
 {
 public:
-   Mesh() = default;
-   Mesh(const std::vector<GLfloat>& vertices,
-         const std::vector<GLfloat>& uv,
-         const std::vector<GLuint>& indices);
-   Mesh(const std::vector<GLfloat>& vertices,
-        const std::vector<GLuint>& indices);
+   Mesh() = delete;
+
+   Mesh(const std::vector<GLfloat> &vertices,
+        const std::vector<GLfloat> &uv,
+        const std::vector<GLuint> &indices);
+
+   Mesh(const std::vector<GLfloat> &vertices,
+        const std::vector<GLuint> &indices);
+
    ~Mesh();
 
    // Disallow copying meshes
-   Mesh(const Mesh& other) = delete;
-   Mesh& operator=(const Model& other) = delete;
+   Mesh(const Mesh &other) = delete;
+
+   Mesh &operator=(const Mesh &other) = delete;
 
    // Allow move semantics
-   Mesh(Mesh&& other);
-   Mesh& operator=(Mesh&& other);
+   Mesh(Mesh &&other) noexcept;
 
-   void add_VBO(int dimensions, const std::vector<GLfloat>& data);
+   Mesh &operator=(Mesh &&other) noexcept;
+
+   void add_VBO(int dimensions, const std::vector<GLfloat> &data);
 
    void bind() const;
+
    void unbind() const;
 
    GLuint get_VAO() const;
+
    GLuint get_index_count() const;
+
 private:
 
-   void add_EBO(const std::vector<GLuint>& indices);
+   void add_EBO(const std::vector<GLuint> &indices);
 
    GLuint m_VAO;
    GLuint m_VBO_count;
@@ -45,5 +56,6 @@ private:
    std::vector<GLuint> m_buffers;
 };
 
+}
 
 #endif //BCM2_MESH_HPP
